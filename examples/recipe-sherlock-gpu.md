@@ -121,13 +121,20 @@ change the working directory
 bash start.sh jupyter /path/to/dir
 ```
 
-### 12. open your browser in local machine and type  
+### 12. Open your browser in local machine and type  
 
-if your port is 51888, then
+If your port is 51888, then type in your browser:
+
 ```
 http://localhost:51888/
 ```
-here is my jupyter lab computing environment. Have fun!
+
+Then, take the token from the URL in the shell. For example, b02cce33bc143b5a66585057fbda248f2a915711f5be21f8 if the URL returned is:
+
+[I 2021-08-31 05:34:52.203 ServerApp] http://localhost:63333/lab?token=b02cce33bc143b5a66585057fbda248f2a915711f5be21f8
+ 
+
+Here is my jupyter lab computing environment. Have fun!
 
 
 ### 13. Resume a session
@@ -137,7 +144,6 @@ bash resume.sh jupyter-gpu
 bash resume.sh jupyter-gpu /path/to/dir
 ```
 ## 14. Stop a session
-
 ```bash
 bash end.sh jupyter-gpu
 # or
